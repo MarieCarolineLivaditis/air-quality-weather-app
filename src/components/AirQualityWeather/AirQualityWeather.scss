@@ -1,0 +1,108 @@
+@use '../../vars';
+
+.card {
+    &-header {
+        text-align: center;
+        border-bottom: 0.1rem solid vars.$altColor;
+        margin-bottom: 0.5rem;
+
+        &-title{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        &-message {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.5rem  0.5rem 0.5rem;
+        
+        &-air{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 49%;
+            border-radius: 0.2rem;
+
+            &Quality {
+                text-align: center;
+                font-size: 1.3rem;
+                font-weight: 400;
+                padding: 0 1rem 0 1rem;
+            }
+
+            &Pollutant {
+                text-align: center;
+                font-size: 0.7rem;
+                font-weight: 400;
+            }
+
+            &.green{
+                background-color: #06ef82;
+                color: #607631;
+                    }
+                
+                    &.yellow{
+                        background-color: #ffff00;
+                        color: #8c6c1d;
+                    }
+                
+                    &.orange{
+                        background-color: #ffa500;
+                        color: #974a20;;
+                    }
+                
+                    &.red{
+                        background-color: #fb0d3d;
+                        color: #942431;
+                    }
+                
+                    &.purple{
+                        background-color: #800080;
+                        color: #543b63;
+                    }
+                
+                    &.maroon{
+                        background-color: #a87383;
+                        color: #573344;
+                    }
+                
+                
+                    &-airQuality {
+                        font-size: 1.2rem;
+                    }
+                
+                    &-mainPollutant{
+                        font-size: 1.2rem;
+                    }
+                
+                    &-temperature {
+                        font-size: 1.2rem;
+                    }
+        }
+
+        &-weather {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 49%;
+            background-color: vars.$altColor;
+            border-radius: 0.2rem;
+
+            &Icon {
+                width: 30%;
+
+            }
+
+            &Temperature {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}

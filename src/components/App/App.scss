@@ -1,0 +1,10 @@
+@use '../../vars';
+
+.app {
+    margin: 2rem auto;
+    width: 50vw;
+    background-image: linear-gradient(vars.$cardColor, #fff);
+    border: 0.1rem solid vars.$cardColor;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem vars.$altColor;
+}

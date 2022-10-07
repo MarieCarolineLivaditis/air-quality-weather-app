@@ -1,0 +1,7 @@
+@use 'sass:color';
+
+$baseColor: #9dafcf;
+$darkColor: color.scale($baseColor, $lightness: -65%);
+$altColor: #c2c8d1;
+$cardColor: color.scale($altColor, $lightness: 55%)
+
