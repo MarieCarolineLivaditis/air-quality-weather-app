@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/air-quality-weather-app/static/css/main.bbdf24bc.css",
+    "main.js": "/air-quality-weather-app/static/js/main.76ed43f1.js",
+    "static/js/787.28cb0dcd.chunk.js": "/air-quality-weather-app/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/air-quality-weather-app/index.html",
+    "main.bbdf24bc.css.map": "/air-quality-weather-app/static/css/main.bbdf24bc.css.map",
+    "main.76ed43f1.js.map": "/air-quality-weather-app/static/js/main.76ed43f1.js.map",
+    "787.28cb0dcd.chunk.js.map": "/air-quality-weather-app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbdf24bc.css",
+    "static/js/main.76ed43f1.js"
+  ]
+}
