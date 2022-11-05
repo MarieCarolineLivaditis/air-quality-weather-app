@@ -5,15 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Store variables
-        uses: ./
         run: |
-          ls -al
           touch .env
           echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
           echo REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}} >> .env
           cat .env
 
       - name: Deploy
+        uses: ./
         run: |
             npm run deploy
 
