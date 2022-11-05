@@ -12,7 +12,6 @@ jobs:
           cat .env
 
       - name: Deploy
-        uses: ./
-        run: |
-            npm run deploy
+      - uses: ./
+      - run: npm run deploy
 
