@@ -4,6 +4,7 @@ jobs:
   env-test:
     runs-on: ubuntu-latest
     steps:
+      - uses: ./
       - name: Store variables
         run: |
           ls -al
@@ -11,8 +12,8 @@ jobs:
           echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
           echo REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}} >> .env
           cat .env
+      - uses: ./
       - name: Deploy
         run: |
-            cd air-quality-weather-app
             npm run deploy
 
