@@ -6,11 +6,8 @@ jobs:
     steps:
       - name: Store variables
         run: |
+          ls
           touch .env
           echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
           echo REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}} >> .env
           cat .env
-      - name: deploy
-        run: |
-          npm install
-          npm run deploy
