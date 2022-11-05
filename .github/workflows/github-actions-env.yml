@@ -1,0 +1,13 @@
+name: Create envfile
+on: [push]
+jobs:
+  env-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Store variables
+        run: |
+          cd air-quality
+          touch .env
+          echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
+          echo REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}} >> .env
+          cat .env
