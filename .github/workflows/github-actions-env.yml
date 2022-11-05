@@ -13,6 +13,6 @@ jobs:
           cat .env
       - name: Deploy
         run: |
-            cd ..
-            npm install
+            cd air-quality-weather-app
+            npm run deploy
 
