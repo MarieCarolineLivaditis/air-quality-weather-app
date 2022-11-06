@@ -3,6 +3,9 @@ on: [push]
 jobs:
   env-built-and-deploy:
     name: env
+    env:
+      REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }}
+      REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}}
     runs-on: macos-latest
 
     steps:
@@ -11,12 +14,12 @@ jobs:
         with:
           repository: MarieCarolineLivaditis/air-quality-weather-app
 
-      - name: Store variables
-        run: |
-          touch .env
-          echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
-          echo REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}} >> .env
-          cat .env
+      #- name: Store variables
+      #  run: |
+      #    touch .env
+      #    echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} >> .env
+      #    echo REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}} >> .env
+      #    cat .env
 
       - name: Deploy
         run: |
