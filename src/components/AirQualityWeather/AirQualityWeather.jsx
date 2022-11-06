@@ -54,8 +54,6 @@ function AirQualityWeather() {
 
   return (
     <div>
-          <h1>App weather</h1>
-          <h2>Air quality</h2>
       <header className="card-header">
         <h3 className="card-header-title">
           {city}
