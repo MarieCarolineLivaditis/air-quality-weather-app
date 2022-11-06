@@ -19,7 +19,7 @@ jobs:
       - name: Deploy
         run: |
           npm install
-          git config --global user.email 'github-actions@github.com'
-          git config --global user.name 'github-actions'
+          git config --global user.email 'mariecarolinelivaditis@gmail.com'
+          git config --global user.name 'mariecarolinelivaditis@gmail.com'
           npm run deploy
 
