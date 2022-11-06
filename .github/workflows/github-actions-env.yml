@@ -15,5 +15,7 @@ jobs:
           cat .env
 
       - name: Deploy
-        run: npm run deploy
+        run: |
+          npm install
+          npm run deploy
 
