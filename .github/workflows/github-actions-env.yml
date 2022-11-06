@@ -8,7 +8,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: MarieCarolineLivaditis/air-quality-weather-app
-          ssh-key: ${{secrets.SSH_KEY}}
         
       - name: Store variables
         run: |
