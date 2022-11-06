@@ -21,6 +21,6 @@ jobs:
           npm install
           git config --global user.email 'mariecarolinelivaditis@gmail.com'
           git config --global user.name 'MarieCarolineLivaditis'
-          git remote set-url https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}
+          git remote set-url origin https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}
           npm run deploy
 
