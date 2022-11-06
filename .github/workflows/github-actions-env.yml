@@ -18,8 +18,8 @@ jobs:
           echo REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}} >> .env
           cat .env
         env:
-          REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }}
-          REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL}}
+          REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
+          REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL}}
 
       - name: Deploy
         run: |
